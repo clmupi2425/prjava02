@@ -1,0 +1,35 @@
+1.- Des de dins de la carpeta del projecte prjava02 del teu ordinador:
+  a) Crea una branca de nom branca00. 
+  b) Accedeix a a la branca00.
+      git checkout -b branca00 //checkout te metes dentro de la branca y la creas con el -b  
+  c) Comprova des de l'interpret d'ordres l'estat del projecte i a quina branca et trobes
+        git status
+        On branch branca00
+        nothing to commit, working tree clean
+5.- Torna a la branca main del projecte. 
+        git checkout main
+    Comprova l'estat del projecte. 
+        git status
+    Mostra l'historial de la branca main.
+        git log
+    Quina diferència hi ha amb l'historial de la branca branca00?
+        La diferencia que hi ha es que els commits tenen el has diferent per cada branca
+6.- Des de geany, actualitza el contingut del fitxer Prjava02.java. Pots veure l'última línia afegida?. Per què?
+        No ja que estem a la branca main i alla no l'habiem posat el cambi, si no en la branca00 y com no estem dins no es pot veure desde el main.
+7.- Torna a la branca branca00. 
+        git checkout branca00
+    Pots veure l'última línia afegida?. Per què?.
+        Si ja que al estar a la branca00 es poden veure les modificacions ja que hem actualitzat l'arxiu.
+10.- Torna a la branca main i realitza les següents accions:
+    b) Fusiona (merge) la branca branca00 amb la branca master. Trobaràs informació a la documentació.
+        git merge branca00
+12.- Continuant dins de la branca main:
+    a) Fes un push del dipòsit local al dipòsit remot.
+        git push origin main
+    c) Comprova que només s'ha actualitzat la branca main únicament. Per què?
+        Perque no hem fet cap push de la branca00 i com les hem fucionat vol dir que les dos tenen el mateix contingut i per tant pots veure les lines afegides.
+14.- Fes:
+    a) Un push de branca01 del dipòsit local al dipòsit remot
+        git push origin branca01
+    c) A quants commits de distància (commit ahead) està de la branca main?
+        1
